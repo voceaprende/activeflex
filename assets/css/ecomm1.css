@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.largerp p, .largerp li { font-size: 1.2em; }
+.largerp li.font-sm { font-size: 13px; }
+.addToCartBtn { white-space: pre-wrap; }
+.green-color { color: #179601; }
+.smgray { color: #999; font-size: 14px!important; }
+
+.nav-pills .nav-link { font-weight: bold; }
+.nav-pills .nav-link { color: #000; }
+
+.nav-pills .nav-link.active {
+    background-color: #0092d6;
+}
+
+
+.pagetitle { background: #0093D7; 
+    padding: 100px 0px;
+}
+.clubsavings {
+    background-image: url("../images/clubsavingsbg.png");
+    background-position: top center;
+    overflow: hidden;
+    background-size: cover;
+}
+.lightgrey {
+    background: #f5f5f5;
+}
+.pad40 { padding: 40px 0px; }
+
+.article-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: cover;
+    background: #eaeaea;
+}
+.topimg.sevenhacks .article-image {
+    background-image: url("../images/arteries.jpg");
+    background-position: center;
+}
+.topimg.applecidervinegar .article-image {
+    background-image: url("../images/applecidervinegar1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.topimg.thyroid .article-image {
+    background-image: url("../images/articleheader-thyroid.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.bluebox {
+    background: #0093d7;
+    color: #FFF;
+    padding: 40px 20px;
+}
+.blueborder {
+    border: 3px solid #0093d7;
+}
+
+.article-title { 
+    font-size: 56px; 
+    letter-spacing: -1px;
+}
+.article-subhead {
+    font-weight: 900;
+    letter-spacing: -1px;
+    font-size: 38px;
+}
+
+.blueheading { 
+    background: #0093d7; 
+    padding: 5px 20px 5px 10px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.fs21 { font-size: 21px; }
+.fs29 { font-size: 29px; }
+.fs38 { font-size: 38px; }
+.fs40 { font-size: 40px; }
+.fs48 { font-size: 48px; }
+
+ul.doublespace li { margin-bottom: 15px; }
+
+img.white-border {
+    border: 3px #fff solid;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+img.thinborder {
+    border: 1px solid #CCC;
+}
+img.thyroidimg {
+    border: 2px solid #212121; 
+}
+
+.lightbluebox {
+    background: #e0f2fa;
+    border: 2px dotted #0092d5;
+    padding: 25px 25px 10px;
+}
+
+.product-card {
+    padding: 60px;
+    margin-bottom: 30px;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 5%);
+}
+.product-card .price {
+    font-size: 16px;
+    color: #C00;
+    font-weight: 600;
+}
+.product-card .price.compare {
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #212121;
+    font-weight: 400;
+}
+
+.product-card .savings { 
+    display: block;
+    font-size: 13px;
+    color: #C00;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.subscriptionelement {
+    border-bottom: 1px solid #CCC;
+}
+
+.active-subscriptions .btn-outline-secondary, .product-card .btn-outline-secondary {
+    border: 2px solid #212721;
+    margin-right: 12px;
+    color: #212721;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 20px;
+}
+.active-subscriptions .btn-outline-secondary:hover {
+    background-color: #fff;
+}
+.product-card .btn-outline-secondary:hover {
+    background-color: #f5f5f5;
+}
+.active-subscriptions .btn-outline-secondary img {
+    margin-right: 12px;
+}
+.skipnext img, .deactivatesub img {
+    margin-right: 8px;
+}
+.skipnext, .deactivatesub { font-size: 16px; }
+.skipnext a { color: #007cba; }
+.deactivatesub a { color: #C00; }
+.skipnext a:hover, .deactivatesub a:hover { text-decoration: none; }
+
+#edit-quantity .quantity input {
+    margin: 0;
+}
+
+.input-group {
+    padding: 0px!important; 
+    border: none;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.pricingbox .input-group {
+    width: 150px;
+    margin: auto;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #BCC3C0;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: #4F4F4F;
+    font-family: Lato;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 21px;
+    padding-left: 16px;
+    padding-top: 8px;
+    -webkit-appearance: none;
+}
+.input-group.quantity .input-number {
+    width: 50px;
+    padding: 0 12px;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+    color: #212721;
+    font-family: Lato;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+.input-group.quantity .input-number, .input-number-decrement, .input-number-increment {
+    border: 1px solid #BCC3C0;
+    height: 40px;
+    user-select: none;
+}
+.input-group.quantity .input-number {
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+}
+.input-group.quantity .input-number-decrement {
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+.input-group.quantity .input-number-increment {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+#edit-quantity .input-group.quantity {
+    align-items: flex-start;
+}
+#edit-quantity .input-group.quantity > * {
+    height: 50px;
+}
+.input-group.quantity .input-number-decrement, .input-number-increment {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    line-height: 48px;
+    color: #444;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 24px 0px;
+}
+
+.btn-number { background: #FFF; margin: 0; padding: 0px; }
+
+.input-group-addon {
+    display: table-cell;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px 10px;
+}
+.input-group-addon:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.eot');
+  src: url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.woff') format('woff'), url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-calendar:before {
+    content: "\e109";
+}
+
+/* #Lists
+================================================== */
+ul.bluearrow { list-style-type: none; padding-left: 20px; }
+
+.bluearrow li {
+	position: relative;
+	padding-left:35px;
+	line-height: 1.5em;
+	margin-bottom: 3%;
+}
+
+.bluearrow li:before {
+    content: '';
+    width: 26px;
+    height: 21px;
+    position: absolute;
+    background-image: url("../images/bluearrow.png");
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 14px;
+    transform: translateY(-50%);
+}
+
+.pricingbox {
+    padding: 20px;
+    border: 3px solid #ccc;
+}
+
+
+@media screen and (min-width: 680px) {
+    .article-image {
+    height: 350px;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .article-image {
+    height: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .article-image {
+        height: 500px;
+    }
+}
+
+/*** Responsive Styles Smartphone Portrait ***/
+@media all and (max-width: 479px) {
+    .mobileshow.aligncenter { display: block; margin: 0 auto; }
+    .article-title { font-size: 34px; }
+    .fs38, .fs40 { font-size: 28px; }
+    .fs48 { font-size: 32px; }
+    .article-subhead { font-size: 28px; }
+}

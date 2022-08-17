@@ -1,0 +1,292 @@
+<style>
+.highlight { background-color: #ffe640; }
+
+p.sml { font-size: 0.75em; font-size: 0.75rem; line-height: 1.3em; letter-spacing: -1px; }
+.learnmore { width: auto; height: auto; max-width: 100%; }
+.learnmore h3 { margin-left: 0; margin-top: 12px; }
+.mobilebump { font-size: 1.4em; font-weight: 700; }
+.resultsv { margin-top:65px; }
+.legal { vertical-align: baseline; position: relative; top: -0.7em; }
+
+@media only screen and (min-device-width: 479px) {
+	p.sml { font-size: 1.0em; font-size: 1.0rem; line-height: 1.3em; }
+	.learnmore { margin-left: -5%; margin-right: 20%; width: 80%; }
+	.learnmore h3 { margin: 0 12px 12px 0; }
+	.mobilebump { font-size: 1.0em; font-weight: 600; }
+	.belly-pic { margin-bottom: 13px; }
+	.resultsv { margin-top:20px; }
+	#box27 .bluebox { padding: 20px 15px 20px 15px; max-height: 1200px; overflow:hidden; }
+}
+
+@media only screen and (min-device-width: 1025px) {
+	p.sml { font-size: 0.75em; font-size: 0.75rem; line-height: 1.3em; }
+}
+
+@media only screen and (max-device-width: 479px) {
+	body { max-width: 100%; }
+	#fullpage { width: 100%; max-width: 100%; margin: 0 auto; }
+	#box27 .bluebox { padding: 20px 15px 20px 15px; max-height: 1355px; overflow:hidden; }
+	#box14 .p33 { margin-top: -46px; }
+}
+
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: 178px;
+    background: rgba(45, 45, 45, 0.95);
+    bottom: -178px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100000;
+    -webkit-transition: top 0.5s ease-out;
+    transition: top 0.5s ease-out;
+    background: url(https://d2rgzux42sgyh1.cloudfront.net/over40/assets/menu_bg.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+.menu.mob {
+    display: none;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.menu.desk {
+    display: block;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.menu.mob.show { bottom: 0; }
+.menu.desk.show { bottom: 0; }
+.menu.desk h1 , .menu.desk h2 {
+    text-shadow: 0px 5px 9px rgba(0, 0, 0, .5);
+    margin-top: 16px;
+    display: inline-block;
+}
+.menu.desk h1 { color: white; }
+.menu.desk h2 { color: #fcff00; }
+.menu.desk .book {
+    position: absolute;
+    right: 0px;
+    bottom: 1px;
+	width: 10cm;
+    height: auto;
+}
+.menu .close {
+    position: absolute;
+    right: 0px;
+	width: 2cm;
+	height: auto;
+    top: 12px;
+    margin-left: 0px;
+}
+
+.logo { cursor: pointer; }
+
+.menu .cta h3 {
+    position: relative;
+    right: -45px;
+    top: 8px;
+    padding: 10px 20px;
+    text-align: center;
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcff00+1,ffa530+100 */
+    background: #fcff00; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #fcff00 1%, #ffa530 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #fcff00 1%,#ffa530 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #fcff00 1%,#ffa530 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcff00', endColorstr='#ffa530',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: #2b4a73;
+}
+.menu .cta.clsvid h3 {
+	cursor: pointer;
+    background: white;
+    color: #3a2d44;
+    width: auto;
+    padding: 17px 30px;
+    display: none;
+}
+.menu .cta.clsvid h3 img { margin-left: 20px; }
+.menu .logo { position: absolute; top: 10px; left: 0; }
+.menu .content { padding: 0; height: 100%; }
+.menu .close { cursor: pointer; }
+.menu.hide { display: none; }
+
+.cta h3 {
+	display: inline-block;
+    padding: 25px 0px 25px 50px;
+    background: #5596ea; /* Old browsers */
+    width: 380px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    border-radius: 60px;
+    -webkit-box-shadow: 0px 14px 66px -11px rgba(0,0,0,0.37);
+	-moz-box-shadow: 0px 14px 66px -11px rgba(0,0,0,0.37);
+	box-shadow: 0px 14px 66px -11px rgba(0,0,0,0.37);
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	letter-spacing: 1.5px;
+	color: white;
+
+	-webkit-transition:all 0.1s linear;
+    transition:all 0.1s linear;
+}
+.cta h3:hover {
+	margin: 12px 0;
+	-webkit-box-shadow: 0px 14px 26px -11px rgba(0,0,0,0.37);
+	-moz-box-shadow: 0px 14px 26px -11px rgba(0,0,0,0.37);
+	box-shadow: 0px 14px 26px -11px rgba(0,0,0,0.37);
+
+	/*background: linear-gradient(269deg, #a2ce5e, #42b6ab, #9a70d6, #ff8273);*/
+	background: linear-gradient(269deg, #9a70d6, #ff8273, #42b6ab, #a2ce5e );
+	background-size: 800% 800%;
+
+	-webkit-animation: AnimationName 2s linear infinite;
+	-moz-animation: AnimationName 2s linear infinite;
+	animation: AnimationName 2s linear infinite;
+}
+.scrl {
+	cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .menu.mob { display: block; }
+    .menu.desk { display: none; }
+    .menu.mob.hide { display: none; }
+    .mob-remove { display: none; }
+    .menu .book { position: absolute; top: -20px; left: 20px; }
+    .menu .close { position: absolute; left: -20px; top: 4px; }
+    .menu.mob { background: url(https://d2rgzux42sgyh1.cloudfront.net/over40/assets/menu_bg.jpg) no-repeat center center; background-size: cover; }
+    .menu .cta h3 { padding: 10px 0px; width: 200px; }
+}
+
+.over40abh1 { font-size: 2.35em; padding-left: 50px; }
+.over40abh2 { font-weight: 800; font-size: 2.4em; padding-left: 50px; margin-top:-25px;}
+.widescr { display: none; }
+
+@media only screen and (min-device-width: 2000px) {
+	.widescr { display: inline-block; }
+}
+
+@media only screen and (min-device-width: 479px) {
+	.over40abh1 { font-family: Raleway, san-serif; font-size: 1.8em; padding-left: 0px; padding-bottom: 5px; }
+	.over40abh2 { font-family: Raleway, san-serif; font-weight: 800; font-size: 1.85em; padding-left: 0; padding-bottom: 5px; margin-top: 0; }
+
+	.menu.desk .book {
+	    right: 85px;
+		width: 7cm;
+		height: auto;
+		margin-left: 0;
+	}
+	.menu .close {
+		width: auto;
+		height: auto;
+		margin-left: 0;
+	    top: 2px;
+	}
+	.menu {
+		height: 70px;
+		bottom: -120px;
+		left: 0;
+		right: 0;
+	    background: url(https://d2rgzux42sgyh1.cloudfront.net/over40/assets/menu_bg_desk.jpg) no-repeat center center;
+	    background-size: auto;
+	}
+
+	.menu .cta h3 {
+	    position: absolute;
+		width: 350px;
+		right: 30%;
+		top: -11px;
+		height: 46px;
+		max-height: 46px !important;
+		margin: 16px 10px;
+		padding: 14px 14px 0px 14px;
+		text-align: center;
+		 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcff00+1,ffa530+100 */
+		background: #fcff00; /* Old browsers */
+		background: -moz-linear-gradient(-45deg, #fcff00 1%, #ffa530 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg, #fcff00 1%,#ffa530 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg, #fcff00 1%,#ffa530 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcff00', endColorstr='#ffa530',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		color: #2b4a73;
+	}
+	.menu .cta.clsvid h3 {
+		cursor: pointer;
+		background: white;
+		color: #3a2d44;
+		width: auto;
+		padding: 17px 30px;
+		display: none;
+	}
+	.menu .cta.clsvid h3 img { margin-left: 20px; }
+	.menu .logo { position: absolute; top: 10px; left: 0; }
+	.menu .content { padding: 0; height: 100%; }
+	.menu .close { cursor: pointer; }
+	.menu.hide { display: none; }
+
+	.cta h3 {
+		display: inline-block;
+		padding: 15px 20px;
+		background: #5596ea; /* Old browsers */
+		width: 260px;
+		margin: 10px 0;
+		text-transform: uppercase;
+		border-radius: 60px;
+		-webkit-box-shadow: 0px 14px 66px -11px rgba(0,0,0,0.37);
+		-moz-box-shadow: 0px 14px 66px -11px rgba(0,0,0,0.37);
+		box-shadow: 0px 14px 66px -11px rgba(0,0,0,0.37);
+		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+		letter-spacing: 1.5px;
+		color: white;
+
+		-webkit-transition:all 0.1s linear;
+		transition:all 0.1s linear;
+	}
+	.cta h3:hover {
+		margin: 6px 0;
+		-webkit-box-shadow: 0px 14px 26px -11px rgba(0,0,0,0.37);
+		-moz-box-shadow: 0px 14px 26px -11px rgba(0,0,0,0.37);
+		box-shadow: 0px 14px 26px -11px rgba(0,0,0,0.37);
+
+		/*background: linear-gradient(269deg, #a2ce5e, #42b6ab, #9a70d6, #ff8273);*/
+		background: linear-gradient(269deg, #9a70d6, #ff8273, #42b6ab, #a2ce5e );
+		background-size: 800% 800%;
+
+		-webkit-animation: AnimationName 2s linear infinite;
+		-moz-animation: AnimationName 2s linear infinite;
+		animation: AnimationName 2s linear infinite;
+	}
+	.menu .cta h3:hover {
+		margin: 16px 10px;
+	}
+}
+
+.mobtight { max-width: 100%; width: 100%; }
+.sfmobh1 { font-size: 1.0em; }
+.sfmobh2 { font-size: 1.0em; }
+.learnmoretxt { margin: 0 auto; width: 210px; height: 56px; max-width: 100%; padding-left: 25px; font-size: 1.15em; text-align: center;  }
+.atc-button { font-weight: 800; font-size: 1.43em; width: 300px; margin-top: 3px; padding-top:23px; max-width: 100%; }
+.lrn h3:hover { margin: 10px auto 10px auto; }
+a.moblink, a.moblink:link, a.moblink:hover, a.moblink:active { color: #ffffff; font-family: 'Raleway', 'Open Sans',san-serif; font-size: 0.95em; font-weight: 700; margin: 0 0; padding: 0 0 2px 0; text-decoration: underline; line-height: 0.9em; letter-spacing: -0.5px; }
+
+@media only screen and (max-device-width: 479px) {
+	.slidemob { width: 340px !important; max-width: 100%; height: 100px; }
+	.sfmobh1 { font-size: 0.9em; }
+	.sfmobh2 { font-size: 0.9em; }
+	.mobtight { max-width: 100%; width: 98%; margin: auto auto; }
+	.mobscl { width: 450px; max-width: 100%; margin: auto auto; }
+	.mobmv { position: relative; top: -10px; right: 22px; }
+    .menu .close { position: absolute; left: 320px; top: 10px; width: auto; height: auto; }
+    .menu .book { position: absolute; top: 5px; left: 5px; }
+	.menu { height: 90px; bottom: -90px; }
+	.learnmoretxt {font-size: 1.55em; width: 130px; height: 56px; max-width: 100%; margin-right: 40px; margin-bottom: 22px; margin-top: -10px; text-align: center; }
+	.atc-button { font-weight: 800; font-size: 1.55em; width: 285px; padding-top:18px; padding-right: 50px; margin-right: 50px; max-width: 100%; position: relative; right: 0px; }
+	.cta h3 p { padding: 6px 10px 0 14px; margin-right: 10px; }
+	a.moblink, a.moblink:link, a.moblink:hover, a.moblink:active { color: #ffffff; font-family: 'Raleway', 'Open Sans',san-serif; font-size: 0.95em; font-weight: 700; margin: 0 0; padding: 0 0 2px 0; text-decoration: underline; line-height: 0.9em; letter-spacing: -0.5px; }
+	#box14 .title-holder { height: 100px; overflow: hidden; }
+	#box11 .karen2 { max-width: 99%; margin: auto auto; }
+}

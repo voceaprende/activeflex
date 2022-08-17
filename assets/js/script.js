@@ -1,0 +1,3 @@
+jQuery(document).ready(function ($) {
+    var item_count = $(".owl-carousel1 .owl-carousel-item").length;$(".owl-carousel1").owlCarousel({dots:!1,nav:!0,responsive:{0:{loop:!0,items:1,margin:0,stagePadding:10},370:{loop:!0,items:2,margin:20,stagePadding:10},550:{loop:!0,items:3,margin:20,stagePadding:10},850:{loop:!0,items:4,margin:20,stagePadding:10},1200:{loop:!1,items:item_count,stagePadding:10,margin:20}}});
+});
